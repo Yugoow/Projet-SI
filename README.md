@@ -23,15 +23,25 @@ Pour cela il faut :
 -	exécuter le script
 ``root@debian: ~# sudo ./script/script.sh``
 
-Prérequis avant exécution des script :
-- installer sudo ( apt-get sudo )
-- installer curl ( sudo apt-get curl )
-- installer unzip ( sudo apt-get unzip )
-- récupérer un script ( wget https://github.com/Yugoow/Projet-SI/releases/download/1.0-SI/scriptDocker.zip )
-- dézipper le fichier récupéré
-- donner les droits d'exécutions au script ( chmod 777 scriptDocker.sh )
-- exécuter le script ( sudo ./script.Docker.sh )
+Installation de Docker
+En premier lieu le script va s’occuper d’installer docker et docker-compose. Deux composants permettant la création, définition et gestion de containeurs. Docker compose permet de déployer plusieurs services d’un seul coup.
+![image](https://user-images.githubusercontent.com/56593824/140827294-52d14a23-3ef4-4841-ae95-841526ee00a0.png)
+Ici on va venir vérifier si les deux composants sont bien installés et si on alors on les installe.
 
+
+Installation du Serveur Web
+Un fois l’installation de docker et docker compose réalisée, on va donc installer les images des services LAMP (Apache, MySQL, PHP). Pour cela on va réaliser un fichier docker-compose.yaml qui sera utilisé en input de la commande docker-compose. Ce fichier contient les informations sur les images, les ports, les paramètres, les volumes, ... des différents services.
+
+![image](https://user-images.githubusercontent.com/56593824/140827234-d9457c7e-c62d-4ed5-8aad-1fb13c27b263.png)
+Fichier docker-compose.yaml
+
+Pour l’installation de php, on a mis en place un fichier dockerfile, ce fichier va permettre d’émettre une série d’instructions pour l’installation d’une image. Ici php sera téléchargé avec l’extension mysql et PDO pour permettre la connexion à une base de données.
+
+![image](https://user-images.githubusercontent.com/56593824/140827204-a1f44388-2766-466e-a7d1-801426101072.png)
+Fichier php.Dockerfile
+
+![image](https://user-images.githubusercontent.com/56593824/140827182-67e5a94b-1a33-42b5-88bd-16dcf6beba5c.png)
+Et finalement, on va venir « build » ces containers, en exécutant docker-compose up -d (-d est pour l’exécution en arrière-plan des services).
 
 
 Schéma temporaire
