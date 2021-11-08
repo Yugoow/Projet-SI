@@ -29,6 +29,19 @@ dockerC_init() {
 	echo "Installation de Docker Compose : TERMINEE"
 }
 
+echo "Verification de l'installation de Docker"
+docker --version
+
+if [ $? != 0 ]; then
+	docker_init
+fi
+
+echo "Verification de l'installation de Docker Compose"
+docker-compose --version
+
+if [ $? != 0 ]; then
+	dockerC_init
+fi
 
 echo "FIN"
 
