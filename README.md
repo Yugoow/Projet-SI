@@ -7,7 +7,7 @@ Prérequis :
 -	installer curl <br>
 ``root@debian: ~# sudo apt-get curl``
 
-Récupération du script :
+Récupération du script :<br>
 Si la récupération du script en « physique » n’est pas possible, il faut dans ce cas le télécharger depuis github.
 Pour cela il faut :
 -	installer unzip <br>
