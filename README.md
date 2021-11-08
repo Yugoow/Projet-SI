@@ -25,7 +25,8 @@ Pour cela il faut :
 
 <h1>Installation de Docker</h1>
 En premier lieu le script va s’occuper d’installer docker et docker-compose. Deux composants permettant la création, définition et gestion de containeurs. Docker compose permet de déployer plusieurs services d’un seul coup.
-![image](https://user-images.githubusercontent.com/56593824/140827294-52d14a23-3ef4-4841-ae95-841526ee00a0.png)
+
+![image](https://user-images.githubusercontent.com/56593824/140827482-8fa02132-44c1-4c19-a0d0-1be4901a7a81.png)
 
 Ici on va venir vérifier si les deux composants sont bien installés et si on alors on les installe.
 
