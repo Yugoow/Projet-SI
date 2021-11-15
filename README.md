@@ -3,17 +3,17 @@ Projet SI
 Pour permettre un déploiement optimisé et rapide de la DMZ et de ses différents services, on va utiliser un script qui va s’occuper d’aller télécharger toutes les applications et packages nécessaires à leurs déploiements.
 Prérequis :
 -	installer sudo <br>
-``root@debian: ~# apt-get sudo``
+``root@debian: ~# apt-get install sudo``
 -	installer curl <br>
-``root@debian: ~# sudo apt-get curl``
+``root@debian: ~# sudo apt-get install curl``
 
 Récupération du script :<br>
 Si la récupération du script en « physique » n’est pas possible, il faut dans ce cas le télécharger depuis github.
 Pour cela il faut :
 -	installer unzip <br>
-``root@debian: ~# sudo apt-get unzip``
+``root@debian: ~# sudo apt-get install unzip``
 -	installer wget <br>
-``root@debian: ~# sudo apt-get wget``
+``root@debian: ~# sudo apt-get install wget``
 -	Récupérer le script depuis https://github.com/Yugoow/Projet-SI/releases/download/1.0-SI/scriptDMZ.zip <br>
 ``root@debian: ~# wget https://github.com/Yugoow/Projet-SI/releases/download/1.0-SI/scriptDMZ.zip``
 -	dézipper le fichier récupéré <br>
