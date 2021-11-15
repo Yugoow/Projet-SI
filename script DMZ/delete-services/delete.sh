@@ -11,7 +11,7 @@ docker volume rm lamp_mysql-data
 echo "Attention les volumes n'ont pas été supprimés"
 
 #Suppression de docker
-#sudo rm /sur/local/bin/docker-compose
+#sudo rm /usr/local/bin/docker-compose
 
 #sudo apt-get purge docker-ce docker-ce-cli containerd.io
 #sudo rm -rf /var/lib/docker
